@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Cytracon Page Notes</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; font: 16px/1.55 Inter, ui-sans-serif, system-ui, sans-serif; color: #172033; background: #f7f8fb; }
+    main { width: min(760px, calc(100vw - 40px)); margin: 40px auto 64px; background: #fff; border: 1px solid #d9deea; border-radius: 12px; padding: 36px 40px; }
+    h1 { font-size: 28px; margin: 0 0 6px; }
+    .meta { color: #667085; font-size: 14px; margin: 0 0 28px; }
+    h2 { font-size: 18px; margin: 28px 0 8px; }
+    p, li { color: #3c4658; }
+    a { color: #1f6feb; }
+    footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid #e8eaed; font-size: 13px; color: #667085; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy — Cytracon Page Notes</h1>
+    <p class="meta">Publisher: Cytracon Webservices · Contact: <a href="mailto:bb@cytracon.com">bb@cytracon.com</a> · Effective: 17 August 2026</p>
+
+    <h2>What the extension does</h2>
+    <p>Cytracon Page Notes lets you attach private notes to an exact web page or an exact host. Notes stay in your browser. If you turn sync on, the extension writes one JSON file to the hidden app-data folder of <em>your</em> Google Drive.</p>
+
+    <h2>Data collected</h2>
+    <ul>
+      <li>Current tab URL and title, used only to attach a note to that exact page or host</li>
+      <li>Note title, body, and tags that you write</li>
+      <li>Settings such as auto-sync and sync interval</li>
+      <li>If Drive sync is enabled: a Google OAuth token issued to your account, stored by Chrome</li>
+    </ul>
+    <p>The extension does not read page content beyond the URL/title needed for the note key, except when you use the keyboard shortcut to save currently selected text.</p>
+
+    <h2>How data is used</h2>
+    <p>Data is used only to save, search, export, import, and optionally sync your notes. It is not used for advertising, profiling, creditworthiness, lending, or any purpose unrelated to page notes.</p>
+
+    <h2>Storage and sharing</h2>
+    <ul>
+      <li>Local notes and settings are stored in Chrome extension storage.</li>
+      <li>Optional sync writes <code>cytracon-page-notes.json</code> to Google Drive <code>appDataFolder</code> for the signed-in user only.</li>
+      <li>No note server is operated by Cytracon. Notes are not sent to cytracon.com.</li>
+      <li>Data is not sold, rented, or transferred to third parties.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><code>storage</code> — local notes and settings</li>
+      <li><code>activeTab</code> / <code>tabs</code> — current URL/title and toolbar badge</li>
+      <li><code>scripting</code> — save selected text via the keyboard shortcut</li>
+      <li><code>identity</code> — optional Google Drive sign-in</li>
+      <li><code>alarms</code> — optional periodic Drive sync</li>
+      <li><code>https://www.googleapis.com/*</code> — Drive app-data file only</li>
+    </ul>
+
+    <h2>Remote code</h2>
+    <p>The extension does not load remote code. All scripts ship inside the extension package.</p>
+
+    <h2>Your choices</h2>
+    <p>Notes work locally without Google. You can export JSON, import a backup, disconnect Drive, or uninstall the extension to remove local extension data from Chrome. Drive app-data can be removed from your Google account if you disconnect and delete that file.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, this page will be updated and the effective date will change.</p>
+
+    <footer>
+      Cytracon Webservices · <a href="https://www.cytracon.com">www.cytracon.com</a> · <a href="mailto:bb@cytracon.com">bb@cytracon.com</a><br>
+      <a href="index.html">All extension privacy policies</a>
+    </footer>
+  </main>
+</body>
+</html>
