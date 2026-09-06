@@ -1,11 +1,61 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy — Cytracon Authenticator</title>
-<style>body{margin:0;font:16px/1.55 Inter,system-ui,sans-serif;color:#172033;background:#f7f8fb}main{width:min(760px,calc(100vw - 40px));margin:40px auto;background:#fff;border:1px solid #d9deea;border-radius:12px;padding:36px 40px}h1{margin:0 0 6px;font-size:28px}.meta,footer{color:#667085;font-size:14px}a{color:#1f6feb}</style></head>
-<body><main>
-<h1>Privacy Policy — Cytracon Authenticator</h1>
-<p class="meta">Publisher: Cytracon Webservices · <a href="mailto:bb@cytracon.com">bb@cytracon.com</a> · 17 August 2026</p>
-<p>Cytracon Authenticator generates TOTP codes locally. Account secrets stay in Chrome extension storage on your device.</p>
-<p>If you enable backup, the extension writes an encrypted JSON file to the hidden app-data folder of <em>your</em> Google Drive. No Cytracon server receives secrets.</p>
-<p>Current tab host is used only to suggest the matching account. Data is not sold or used for advertising. No remote code.</p>
-<footer>Cytracon Webservices · <a href="https://www.cytracon.com">cytracon.com</a></footer>
-</main></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Cytracon Authenticator</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; font: 16px/1.55 Inter, ui-sans-serif, system-ui, sans-serif; color: #172033; background: #f7f8fb; }
+    main { width: min(760px, calc(100vw - 40px)); margin: 40px auto 64px; background: #fff; border: 1px solid #d9deea; border-radius: 12px; padding: 36px 40px; }
+    h1 { font-size: 28px; margin: 0 0 6px; }
+    .meta { color: #667085; font-size: 14px; margin: 0 0 28px; }
+    h2 { font-size: 18px; margin: 28px 0 8px; }
+    p, li { color: #3c4658; }
+    a { color: #1f6feb; }
+    footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid #e8eaed; font-size: 13px; color: #667085; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy — Cytracon Authenticator</h1>
+    <p class="meta">Publisher: Cytracon Webservices · Contact: <a href="mailto:bb@cytracon.com">bb@cytracon.com</a> · Effective: 6 September 2026</p>
+
+    <h2>What the extension does</h2>
+    <p>Cytracon Authenticator generates TOTP two-factor codes locally. Account secrets stay in Chrome storage on your device. Backup sync writes an encrypted vault file into <em>your</em> Google Drive plugin folder through a local native host.</p>
+    <h2>Data collected</h2>
+    <ul>
+      <li>TOTP account metadata and secrets that you import or enter</li>
+      <li>Exact hosts you assign to accounts</li>
+      <li>Current tab host, used only to suggest the matching account</li>
+    </ul>
+    <h2>Storage and sharing</h2>
+    <ul>
+      <li>Accounts are stored in Chrome extension storage.</li>
+      <li>Sync writes encrypted <code>cytracon-authenticator.json</code> via native host <code>com.cytracon.plugin_sync</code>.</li>
+      <li>The vault passphrase never leaves the browser session.</li>
+      <li>No Cytracon server receives secrets. Data is not sold.</li>
+    </ul>
+    <h2>Permissions</h2>
+    <ul>
+      <li><code>storage</code> — local accounts and settings</li>
+      <li><code>activeTab</code> / <code>tabs</code> — exact host matching</li>
+      <li><code>scripting</code> — autofill a code</li>
+      <li><code>clipboardWrite</code> — copy a code</li>
+      <li><code>nativeMessaging</code> — encrypted Drive-folder backup</li>
+      <li><code>alarms</code> — periodic backup while the vault is unlocked</li>
+    </ul>
+
+    <h2>Remote code</h2>
+    <p>The extension does not load remote code. All scripts ship inside the extension package.</p>
+    <h2>Your choices</h2>
+    <p>You can use the extension locally, export a backup, or uninstall it to remove local extension data from Chrome. Synced JSON files live in your own Google Drive folder and can be deleted there.</p>
+    <h2>Changes</h2>
+    <p>If this policy changes, this page will be updated and the effective date will change.</p>
+    <footer>
+      Cytracon Webservices · <a href="https://www.cytracon.com">www.cytracon.com</a> · <a href="mailto:bb@cytracon.com">bb@cytracon.com</a><br>
+      <a href="index.html">All extension privacy policies</a>
+    </footer>
+  </main>
+</body>
+</html>
